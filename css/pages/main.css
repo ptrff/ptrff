@@ -288,3 +288,7 @@
         padding-left: 0;
     }
 }
+
+.first-slide-box{
+    position: relative;
+}
