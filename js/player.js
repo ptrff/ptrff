@@ -224,7 +224,7 @@ function makePlaying(data) {
 
     setTextes(".player-name", data.name);
     audio.src = data.soundPath;
-    document.body.style.backgroundImage = "url(../../" + data.gifPath + ")";
+    document.body.style.backgroundImage = "url(../../ptrff/" + data.gifPath + ")";
 
 
     setOnClicks(".timeline", function (e) {
