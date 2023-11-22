@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/pages/settings.css">
+
+    <title>Meditide - Настройки</title>
+</head>
+<body>
+
+<div class="main-box action-bar flexbox gravity-space-between">
+    <h1>Настройки</h1>
+
+    <aside class="avatar">
+        <a href="profile.html">
+            <img id="avatar" draggable="false" src="img/manulav.jpg" alt="avatar">
+        </a>
+    </aside>
+
+    <img src="img/bgs/settings.svg" draggable="false" alt="setting corner">
+</div>
+
+<div class="main-box flexbox settings-body">
+    <div class="sidebar">
+        <div class="tab active-tab maint" onclick="openTab('main')">Основные</div>
+        <div class="tab profilet" onclick="openTab('profile')">Профиль</div>
+        <div class="tab playert" onclick="openTab('player')">Плеер</div>
+        <div class="tab hidden-clear" onclick="clearDann()">Сбросить</div>
+    </div>
+
+    <div class="sidebar sidebar-bottom">
+        <div class="tab" onclick="clearDann()">Сбросить</div>
+    </div>
+
+    <div class="content">
+
+        <div id="main" class="tab-content">
+
+            <h2>Основные настройки</h2>
+
+            <label for="stats">Собирать статистику:</label>
+            <div class="switch">
+                <input type="checkbox" id="stats" name="stats">
+                <label for="stats"></label>
+            </div>
+
+            <label for="sendstats">Отправлять статистику:</label>
+            <div class="switch">
+                <input type="checkbox" id="sendstats" name="sendstats">
+                <label for="sendstats"></label>
+            </div>
+
+        </div>
+
+        <form id="profile" class="tab-content">
+
+            <h2>Настройки профиля</h2>
+
+            <label for="nickname">Имя пользователя:</label>
+            <input type="text" id="nickname" name="nickname" placeholder="Введите чтобы сменить">
+
+            <label for="imgUrl">Ссылка на картинку профиля:</label>
+            <input type="url" id="imgUrl" name="imgUrl" placeholder="Введите чтобы сменить">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Введите чтобы сменить">
+
+            <label for="date">Дата рождения:</label>
+            <input type="date" id="date" name="date" placeholder="Введите чтобы сменить">
+
+            <label for="city">Город:</label>
+            <input type="text" id="city" name="city" placeholder="Введите чтобы сменить">
+
+            <label for="lovely">Предпочитаемые теги:</label>
+            <input type="text" id="lovely" name="lovely" placeholder="Введите чтобы сменить">
+
+            <label for="ignored">Игнорируемые теги:</label>
+            <input type="text" id="ignored" name="ignored" placeholder="Введите чтобы сменить">
+
+            <button type="submit">Сохранить</button>
+
+        </form>
+
+        <form id="player" class="tab-content">
+
+            <h2>Настройки плеера</h2>
+
+            <label for="blur">Процент размытия фона:</label>
+            <input type="number" id="blur" name="blur" placeholder="Введите чтобы сменить" required>
+
+            <button type="submit">Сохранить</button>
+
+        </form>
+    </div>
+</div>
+
+<script src="js/settings.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+[
+  {"id": 1, "theme": "Вода", "name": "Ручей", "gifPath": "assets/water/ruchey.jpg", "soundPath": "assets/sounds/water.mp3"},
+  {"id": 2, "theme": "Вода", "name": "Озеро", "gifPath": "assets/water/ozero.jpg", "soundPath": "assets/sounds/river.mp3"},
+  {"id": 3, "theme": "Вода", "name": "Водопад", "gifPath": "assets/water/vodopad.jpg", "soundPath": "assets/sounds/water.mp3"},
+  {"id": 4, "theme": "Вода", "name": "Море", "gifPath": "assets/water/more.jpg", "soundPath": "assets/sounds/water.mp3"},
+
+  {"id": 5, "theme": "Лес", "name": "Сосновый лес", "gifPath": "assets/forest/sosny.jpg", "soundPath": "assets/sounds/wind.mp3"},
+  {"id": 6, "theme": "Лес", "name": "Бамбуковый лес", "gifPath": "assets/forest/bambuk.jpg", "soundPath": "assets/sounds/wind.mp3"},
+  {"id": 7, "theme": "Лес", "name": "Осенний лес", "gifPath": "assets/forest/osen.jpg", "soundPath": "assets/sounds/wind.mp3"},
+  {"id": 8, "theme": "Лес", "name": "Тропический лес", "gifPath": "assets/forest/tropici.jpg", "soundPath": "assets/sounds/wind.mp3"},
+
+  {"id": 9, "theme": "Небо", "name": "Звездное небо", "gifPath": "assets/sky/zvezdy.jpg", "soundPath": "assets/sounds/wind.mp3"},
+  {"id": 10, "theme": "Небо", "name": "Лунная ночь", "gifPath": "assets/sky/lunoch.jpg", "soundPath": "assets/sounds/wind.mp3"},
+  {"id": 11, "theme": "Небо", "name": "Облака", "gifPath": "assets/sky/oblaka.jpg", "soundPath": "assets/sounds/wind.mp3"},
+  {"id": 12, "theme": "Небо", "name": "Закат", "gifPath": "assets/sky/zakat.jpg", "soundPath": "assets/sounds/wind.mp3"},
+
+  {"id": 13, "theme": "Горы", "name": "Эверест", "gifPath": "assets/mounts/everest.jpg", "soundPath": "assets/sounds/wind.mp3"},
+  {"id": 14, "theme": "Горы", "name": "Альпы", "gifPath": "assets/mounts/alpy.jpg", "soundPath": "assets/sounds/wind.mp3"},
+  {"id": 15, "theme": "Горы", "name": "Карпаты", "gifPath": "assets/mounts/karpaty.jpg", "soundPath": "assets/sounds/wind.mp3"},
+  {"id": 16, "theme": "Горы", "name": "Анды", "gifPath": "assets/mounts/andy.jpg", "soundPath": "assets/sounds/wind.mp3"},
+
+  {"id": 17, "theme": "Огонь", "name": "Костер", "gifPath": "assets/fire/koster.jpg", "soundPath": "assets/sounds/fire.mp3"},
+  {"id": 18, "theme": "Огонь", "name": "Свечи", "gifPath": "assets/fire/svechi.jpg", "soundPath": "assets/sounds/fire2.mp3"},
+  {"id": 19, "theme": "Огонь", "name": "Камин", "gifPath": "assets/fire/kamin.jpg", "soundPath": "assets/sounds/fire.mp3"},
+  {"id": 20, "theme": "Огонь", "name": "Вулкан", "gifPath": "assets/fire/vulkan.jpg", "soundPath": "assets/sounds/fire2.mp3"},
+
+  {"id": 21, "theme": "Животные", "name": "Манул", "gifPath": "assets/animal/manul.jpg", "soundPath": "assets/sounds/lounge.mp3"},
+  {"id": 22, "theme": "Животные", "name": "Бекон", "gifPath": "assets/animal/svinka.jpg", "soundPath": "assets/sounds/lounge.mp3"},
+  {"id": 23, "theme": "Животные", "name": "Енот", "gifPath": "assets/animal/enot.jpg", "soundPath": "assets/sounds/lounge.mp3"},
+  {"id": 24, "theme": "Животные", "name": "Лиса", "gifPath": "assets/animal/lisa.jpg", "soundPath": "assets/sounds/lounge.mp3"}
+]

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/pages/profile.css">
+
+    <title>Meditide - Профиль</title>
+</head>
+<body>
+
+<!--background image-->
+<img class="main-box profile-bg" draggable="false" src="img/bgs/profile.svg">
+
+<div class="main-box flexbox max-height max-width direction-column adaptive-flex-none">
+
+    <div class="flexbox max-width weight-3 direction-adaptive-one adaptive-flex-none">
+
+
+        <div class="flexbox flex-wrap gravity-space-around direction-row weight-4 direction-adaptive-two">
+
+            <div class="profile-section">
+                <h2>Общая информация</h2>
+                <p id="email">E-mail: ptrff@ptrff.com</p>
+                <p id="date">Дата рождения: 21.12.2012</p>
+                <p id="city">Город: Москва</p>
+            </div>
+
+            <div class="profile-section">
+                <h2>Любимые темы</h2>
+                <p id="lovely">Животные, Страны</p>
+            </div>
+
+            <div class="profile-section">
+                <h2>Игнорируемые темы</h2>
+                <p id="ignored">Погода</p>
+            </div>
+
+        </div>
+
+        <div class="flexbox max-width direction-column weight-3">
+
+            <img id="avatar" src="img/manulav.jpg" draggable="false" class="avatar"/>
+
+            <h2 id="nickname" class="profile-name">ptrff</h2>
+
+        </div>
+
+    </div>
+
+    <div class="profile-info flexbox flex-wrap weight-1 direction-adaptive-two">
+
+        <div class="flexbox flex-wrap gravity-space-around direction-row weight-4 direction-adaptive-two">
+
+            <div class="card">
+                <img src="img/icons/happy.svg" draggable="false">
+                <h2 id="listens">5 шт.</h2>
+                <p>Получено радости</p>
+            </div>
+
+            <div class="card">
+                <img src="img/icons/sit.svg" draggable="false">
+                <h2 id="hours">16</h2>
+                <p>Просижено часов</p>
+            </div>
+
+            <div class="card">
+                <img src="img/icons/next.svg" draggable="false">
+                <h2 id="skipped">26</h2>
+                <p>Пропущено тем</p>
+            </div>
+
+        </div>
+
+        <div class="extra-buttons flexbox max-width direction-column gravity-center weight-3">
+            <h1>Меню</h1>
+            <a href="index.html">
+                <img src="img/icons/home.svg" alt="Home"> Главная
+            </a>
+            <a href="library.html">
+                <img src="img/icons/library-light.svg" alt="Library"> Библиотека
+            </a>
+            <a href="settings.html">
+                <img src="img/icons/settings.svg" alt="Settings"> Настройки
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/profile.js"></script>
+
+</body>
+</html>

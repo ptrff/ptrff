@@ -1,0 +1,276 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    user-select: none;
+}
+
+
+@keyframes opacityIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main-box {
+    animation: opacityIn 0.5s ease-in;
+}
+
+
+.action-bar {
+    height: 10vh;
+    background: var(--green);
+    margin: 0;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+
+.action-bar > img {
+    z-index: -1;
+    position: fixed;
+    width: 10vw;
+    height: 10vw;
+    top: 9.95vh;
+    left: 10.95vw;
+}
+
+.avatar img{
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--background);
+}
+
+.settings-body {
+    height: 90vh;
+}
+
+.sidebar {
+    width: 11vw;
+    background: var(--green);
+}
+
+.sidebar-bottom {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
+.sidebar-bottom div{
+    margin: 0;
+}
+
+.tab {
+    padding: 1vw;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 1vw;
+    border-radius: 1vw;
+}
+
+.tab:hover {
+    background: var(--green-dark);
+    color: var(--foreground-dark)
+}
+
+.active-tab, .active-tab:hover {
+    background: var(--foreground-dark);
+    color: var(--green-dark)
+}
+
+.content {
+    position: relative;
+    left: 10%;
+    width: 70%;
+    overflow: auto;
+}
+
+.content *{
+    font-size: 1.2vw;
+}
+
+.content h2{
+    text-align: center;
+    font-size: 1.7vw;
+    padding: 4vh;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content p {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 1.25vw;
+}
+
+input {
+    width: 100%;
+    padding: 0.6vw;
+    margin-top: 0.25vw;
+    border-radius: 1vw;
+    height: 3vw;
+    box-sizing: border-box;
+    border: none;
+    background-color: var(--background-light);
+    color: var(--foreground-dark);
+}
+
+input:focus {
+    outline: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 4vw;
+    height: 3.5vw;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch label {
+    background-color: var(--foreground-dark);
+    border-radius: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: background-color 0.3s;
+}
+
+.switch label:before {
+    background-color: var(--background-light);
+    border-radius: 50%;
+    content: '';
+    height: 2vw;
+    width: 2vw;
+    position: absolute;
+    transform: translateX(0.2vw);
+    transition: 0.3s;
+}
+
+.switch input:checked + label {
+    background-color: var(--foreground);
+}
+
+.switch input:checked + label:before {
+    transform: translateX(1.7vw);
+    background-color: var(--brown);
+}
+
+button {
+    background-color: var(--brown);
+    color: var(--foreground);
+    padding: 1vw;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1.5vw;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--brown-light);
+}
+
+.hidden-clear{
+    visibility: hidden;
+}
+
+@media (max-width: 1280px) {
+    .action-bar > img{
+        visibility: hidden;
+    }
+
+    .settings-body{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        position: relative;
+        top: -1px;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .action-bar > h1{
+        font-size: 4vw;
+        padding-left: 4vw;
+    }
+
+    .action-bar > aside{
+        margin-right: 4vw;
+    }
+
+    .sidebar * {
+        font-size: 3vw;
+    }
+
+    .sidebar-bottom{
+        visibility: hidden;
+    }
+
+    .hidden-clear{
+        visibility: visible;
+    }
+
+    .content{
+        width: 90%;
+        left: 5%;
+    }
+
+    .content *{
+        font-size: 4vw;
+    }
+
+    .content h2{
+        padding-top: 0;
+        font-size: 4vw;
+    }
+
+    .switch{
+        width: 10vw;
+        height: 7vw;
+        margin-bottom: 2vw;
+    }
+
+    .switch label:before{
+        height: 5vw;
+        width: 5vw;
+    }
+
+    .switch input:checked + label:before {
+        transform: translateX(4.75vw);
+        background-color: var(--brown);
+    }
+
+    input{
+        height: 7vw;
+        margin-bottom: 2vw;
+    }
+
+    button{
+        margin-bottom: 2vw;
+    }
+}

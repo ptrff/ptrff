@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/pages/player.css">
+
+    <title>Meditide</title>
+</head>
+<body id="body">
+
+<div id="player" class="flexbox direction-column gravity-space-between">
+    <img src="img/bgs/player.svg" class="player-bg" draggable="false">
+    <div class="header max-width flexbox gravity-space-between" style="overflow: initial">
+        <div class="button-bg flexbox gravity-center" style="background: transparent">
+            <img id="minimize" src="img/icons/minimize.svg" alt="Minimize" class="minimize">
+        </div>
+        <a href="library.html" class="button-bg flexbox gravity-center">
+            <img src="img/icons/library.svg" alt="library" class="control-button previous">
+        </a>
+        <a href="profile.html">
+            <img draggable="false" src="img/manulav.jpg" alt="avatar" class="avatar">
+        </a>
+    </div>
+    <div class="body max-height max-width flexbox gravity-space-around direction-column">
+        <h2 class="player-name">Неизвестен - без названия</h2>
+        <div class="timeline">
+            <div class="progress" id="progress"></div>
+        </div>
+    </div>
+    <div class="controls max-width flexbox gravity-space-between" style="overflow: initial">
+        <div class="button-bg flexbox gravity-center previous">
+            <img draggable="false" src="img/icons/previous.svg" alt="Previous" class="control-button">
+        </div>
+        <div class="button-bg flexbox gravity-center play-button">
+            <img draggable="false" src="img/icons/play.svg" alt="Play" class="control-button play">
+        </div>
+        <div class="button-bg flexbox gravity-center next">
+            <img draggable="false" src="img/icons/next.svg" alt="Next" class="control-button">
+        </div>
+    </div>
+</div>
+
+<!--minimized player-->
+<aside id="maximize" class="minimized-player flexbox" style="visibility: hidden">
+    <img draggable="false" src="img/icons/maximize.svg" alt="maximize">
+</aside>
+
+<!--top player-->
+<aside id="top-player" class="max-width flexbox gravity-space-around">
+    <img src="img/bgs/player-top.svg" class="player-bg" draggable="false">
+    <div class="body max-height flexbox gravity-space-around direction-column">
+        <h2 class="player-name">Неизвестен - без названия</h2>
+        <div class="timeline">
+            <div class="progress" id="mprogress"></div>
+        </div>
+    </div>
+    <div class="button-bg flexbox gravity-center previous">
+        <img draggable="false" src="img/icons/previous.svg" alt="Previous" class="control-button">
+    </div>
+    <div class="button-bg flexbox gravity-center play-button">
+        <img draggable="false" src="img/icons/play.svg" alt="Play" class="control-button play">
+    </div>
+    <div class="button-bg flexbox gravity-center next">
+        <img draggable="false" src="img/icons/next.svg" alt="Next" class="control-button">
+    </div>
+    <a href="profile.html">
+        <img draggable="false" src="img/manulav.jpg" alt="avatar" class="avatar">
+    </a>
+</aside>
+
+<audio id="audio" style="display: none"></audio>
+
+<script src="js/libs/draggable.bundle.legacy.min.js"></script>
+<script src="js/player.js"></script>
+
+</body>
+</html>

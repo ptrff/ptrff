@@ -1,0 +1,272 @@
+.lib-title{
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 5vw;
+    font-size: 4vw;
+}
+
+.sub-title{
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 2.5vw;
+    font-size: 1.5vw;
+}
+
+.catalog-menu{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.slide-transition {
+    transform: rotateZ(180deg);
+    z-index: -1;
+    width: 101%;
+}
+
+.scrollable-element {
+    flex: 0 0 auto;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    padding: 1vw 0;
+    font-size: 1vw;
+
+    width: 25vw;
+    height: 26vw;
+}
+
+.in-scrollable-square {
+    margin-bottom: 2vw;
+    width: 20vw;
+    height: 20vw;
+
+    padding: 1vw;
+    box-sizing: border-box;
+
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--background);
+    transition: padding 0.3s ease;
+}
+
+.in-scrollable-square:hover{
+    padding: 0;
+}
+
+
+.play-button {
+    background-color: var(--foreground);
+    box-shadow: 0 0 10px var(--foreground);
+    top: 18.5vw;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.play-button img{
+    margin: 1.25vw;
+}
+
+.play-button:hover {
+    transform: scale(1.05);
+    background-color: var(--foreground-dark);
+    box-shadow: 0 0 15px var(--foreground-dark);
+    transition: 0.2s ease-out;
+}
+
+@media (max-width: 1280px) {
+
+    .lib-title{
+        padding-top: 6vw;
+        font-size: 7vw;
+    }
+
+    .sub-title{
+        padding-top: 2vw;
+        width: 50%;
+        font-size: 3vw;
+    }
+
+    .scrollable-element {
+        width: 40vw;
+        height: 55vw;
+        font-size: 2vw;
+    }
+
+    .in-scrollable-square {
+        margin-bottom: 6vw;
+        width: 40vw;
+        height: 40vw;
+        padding: 2vw;
+        border-radius: 50%;
+    }
+
+    .play-button {
+        top: 34vw;
+        width: 15vw;
+        height: 15vw;
+        position: absolute;
+        transition: 0.2s ease-out;
+    }
+
+    .play-button img{
+        margin: 3vw;
+    }
+}
+
+#scrollContainer {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#scrollContainer::-webkit-scrollbar {
+    display: none;
+}
+
+#scrollContainer {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+
+.avatar {
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+    border-radius: 4vh;
+    box-shadow: 0 0 5px var(--background-light);
+    top: 2vh;
+    right: 2vh;
+    cursor: pointer;
+    width: 7vh;
+    height: 7vh;
+    user-select: none;
+}
+
+.avatar img {
+    border-radius: 7vh;
+    width: 7vh;
+    height: 7vh;
+}
+
+
+.no-theme-text{
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    color: var(--foreground-dark);
+    font-size: 1.25vw;
+}
+
+.footer-content{
+    position: relative;
+    top: auto;
+    font-size: 1.5vw;
+    margin-left: 5vw;
+}
+
+.footer-content ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 2vw;
+}
+
+.footer-menu a,
+.social-icons a {
+    text-decoration: none;
+    color: var(--foreground);
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover,
+.social-icons a:hover {
+    color: var(--foreground-dark);
+}
+
+.footer-logo{
+    width: 5vw;
+    height: 5vw;
+    filter: blur(2px);
+    transition: all 0.3s ease;
+}
+
+.footer-logo:hover{
+    filter: blur(0px);
+    width: 6vw;
+    height: 6vw;
+}
+
+.footer-text{
+    margin: auto;
+    padding-left: 10vw;
+}
+.footer-text, .footer-text p{
+    width: fit-content;
+}
+
+.preview{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.preview img{
+    height: 100%;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.preview:hover img{
+    height: 110%;
+}
+
+.theme-name{
+    font-size: 4vw;
+}
+
+.catalog-menu{
+    background-color: var(--background-light);
+    border-radius: 3vw;
+}
+
+@media (max-width: 1280px){
+    .no-theme-text{
+        font-size: 3vw;
+        width: 50%;
+    }
+
+    .footer-content{
+        position: relative;
+        flex-direction: column;
+        font-size: 3vh;
+    }
+
+    .footer-content *{
+        width: 100%;
+    }
+
+    .footer-logo{
+        visibility: hidden;
+    }
+
+    .footer-text{
+        padding-left: 0;
+    }
+
+    .preview{
+        border-radius: 50%;
+    }
+
+    .theme-name{
+        font-size: 6vw;
+    }
+}

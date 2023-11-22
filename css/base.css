@@ -1,0 +1,40 @@
+@import "css/layouts.css";
+
+:root {
+    /*Color palette*/
+
+    --background: #242424;
+    --background-light: #343434;
+    --foreground: #FFF1DE;
+    --foreground-dark: #d9c7ad;
+    --brown: #8B5B3C;
+    --brown-light: #B56E4B;
+    --green: #63846A;
+    --green-dark: #507357;
+
+    /*Font*/
+    font-family: "Overpass", sans-serif;
+    color: var(--foreground);
+    user-select: none;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: normal;
+    src: url(font/OverpassMono-VariableFont_wght.ttf) format('truetype');
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.text-center{
+    text-align: center;
+}

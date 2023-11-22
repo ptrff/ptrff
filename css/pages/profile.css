@@ -1,0 +1,271 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    user-select: none;
+    background: var(--green);
+}
+
+
+@keyframes opacityIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main-box {
+    animation: opacityIn 0.5s ease-in;
+}
+
+
+.profile-bg {
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    height: 101vh;
+    width: 101vw;
+    left: -0.1vw;
+    top: -0.1vw;
+}
+
+.avatar{
+    border-radius: 50%;
+    height: 20vw;
+    width: 20vw;
+    margin: auto;
+    margin-bottom: 1vw;
+    box-shadow: 0 0 5px var(--background);
+}
+
+.profile-name{
+    margin: auto;
+    margin-top: 0;
+    font-size: 2vw;
+}
+
+.card {
+    width: 15vw;
+    height: 15vw;
+    background-color: var(--green);
+    border-radius: 2.5vw;
+    margin-bottom: 2vw;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:before {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--brown);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transition: clip-path 0.3s ease;
+    z-index: -1;
+}
+
+.card:hover:before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.card:hover h2{
+    top: 5vw;
+    margin: 0;
+    font-size: 5vw;
+    text-shadow: 0 0 2vw var(--foreground-dark);
+}
+
+.card:hover p{
+    bottom: -0.1vw;
+    font-size: 1.1vw;
+    color: var(--background);
+}
+
+.card:hover img{
+    opacity: 1;
+    width: 10vw;
+    height: 10vw;
+    top: 2.5vw;
+}
+
+.card h2 {
+    position: absolute;
+    top: 5.25vw;
+    margin: 0;
+    width: 100%;
+    font-size: 4vw;
+    text-shadow: 0 0 0 var(--foreground-dark);
+    transition: 0.3s ease;
+}
+
+.card p {
+    color: var(--green);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1vw;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.card img {
+    position: relative;
+    z-index: -1;
+    top: 5vw;
+    width: 5vw;
+    height: 5vw;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+
+.profile-section {
+    text-align: left;
+    width: 15vw;
+    height: 15vw;
+}
+
+.profile-section h2 {
+    border-bottom: 1px solid var(--foreground);
+    color: var(--foreground);
+}
+
+.profile-section p {
+    color: var(--foreground-dark);
+    line-height: 1.6;
+}
+
+.direction-adaptive-one{
+    flex-direction: row;
+}
+.direction-adaptive-two{
+    flex-direction: row;
+}
+
+
+.extra-buttons a {
+    text-decoration: none;
+    color: var(--foreground);
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 1vw;
+    margin: 0.25vw;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    font-size: 1vw;
+}
+
+.extra-buttons img {
+    height: 0.8vw;
+    width: 0.8vw;
+    margin-right: 0.2vw;
+}
+
+.extra-buttons a:hover {
+    background-color: var(--background-light);
+    color: var(--foreground-dark);
+}
+
+.extra-buttons h1{
+    color: var(--foreground-dark);
+    font-size: 1.5vw;
+    margin-bottom: 0.5vw;
+}
+
+@media (max-width: 1280px){
+    .profile-bg {
+        object-fit: cover;
+        position: fixed;
+        z-index: -1;
+        height: 101vw;
+        width: 101vh;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-90deg) scaleY(-1);
+    }
+
+    .direction-adaptive-one{
+        flex-direction: column-reverse;
+    }
+
+    .adaptive-flex-none > div {
+        flex: none;
+    }
+
+    .direction-adaptive-two{
+        flex-direction: column;
+    }
+
+    .avatar{
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .profile-name{
+        font-size: 6vw;
+    }
+
+    .max-height{
+        overflow: scroll;
+    }
+
+    .profile-section{
+        margin: 3vw 0;
+        width: 80%;
+        height: fit-content;
+        font-size: 3vw;
+    }
+
+    .card{
+        width: 80%;
+    }
+
+    .card img{
+        left: -25vw;
+    }
+
+    .card p{
+        left: 62vw;
+        bottom: 5vw;
+        font-size: 1vw;
+        width: 5vw;
+    }
+
+    .card:hover p{
+        left: 55vw;
+        bottom: 1vw;
+        width: 20vw;
+        font-size: 3vw;
+    }
+
+    .extra-buttons h1{
+        margin-top: 5vw;
+        font-size: 5vw;
+    }
+
+    .extra-buttons > a {
+        width: 80%;
+        font-size: 3vw;
+    }
+
+    .extra-buttons img {
+        height: 2.25vw;
+        width: 2.25vw;
+    }
+
+    .extra-buttons{
+        margin-bottom: 5vw;
+    }
+
+}

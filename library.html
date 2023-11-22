@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/pages/main.css">
+    <link rel="stylesheet" href="css/pages/library.css">
+
+    <title>Meditide</title>
+</head>
+<body>
+
+<div class="main-box flexbox gravity-center direction-column">
+
+    <!--profile-->
+    <aside class="avatar"
+           id="avatar">
+        <a href="profile.html">
+            <img id="avatarImg" draggable="false" src="img/manulav.jpg" alt="avatar">
+        </a>
+    </aside>
+
+    <!-- zaglavie-->
+    <div class="screen-width" style="background: #63846A;">
+
+        <h1 class="lib-title"> Каталог </h1>
+        <h1 class="sub-title"> Тут вы найдёте тему медицтации на любой вкус! 😊 </h1>
+
+    </div>
+
+    <img class="slide-transition" draggable="false" src="img/bgs/main_1.svg" style="position: relative; top: -5px">
+
+    <div id="libcontent" class="flexbox direction-column gravity-center">
+
+        <div id="items" class="screen-width flexbox catalog-menu">
+
+        </div>
+        <div id="item" class="scrollable-element flexbox direction-column"
+             style="position: relative;">
+            <div class="in-scrollable-square foreground">
+                <div class="preview">
+                    <img id="preview" src="assets/animal/lisa.jpg" draggable="false">
+                </div>
+            </div>
+            <div class="max-height max-width weight-3">
+                <h1 id="name" class="text-center">
+                    name
+                </h1>
+            </div>
+            <div id="play" class="play-button circle">
+                <img draggable="false" src="img/figures/play-light.svg">
+            </div>
+        </div>
+
+    </div>
+
+
+    <h1 class="no-theme-text"> Не нашли себе тему медитации? Предложите её нам на почту!</h1>
+
+    <footer class="max-width gravity-start" style="position: relative; top: -5px">
+
+        <div class="footer-content flexbox max-width max-height gravity-center">
+            <img class="footer-logo" draggable="false" src="img/logo.svg">
+            <div class="footer-links">
+                <ul class="footer-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="profile.html">Профиль</a></li>
+                    <li><a href="settings.html">Настройки</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul class="social-icons">
+                    <li><a href="#" class="icon-facebook">ВКонтакте</a></li>
+                    <li><a href="#" class="icon-twitter">Telegram</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-text">
+                <p>&copy; 2023 Meditide. ИКБО-03-22 Петров И.Р. ✌️</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script src="js/library.js"></script>
+</body>
+</html>
